@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palácio</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/overlay.js"></script>
+  </head>
+  <body>
+    <div class="center-horizontal">
+      <h1>Clique nos lugares para mais informações</h1>
+      <img class="mapa" src="Imagens/Mapas/mapa_palacio_quinta_regaleira.png" usemap="#mapa" />
+      <map name="mapa">
+        <area shape="rect" coords="225,185,855,700" onclick="showOverlay(`palacio.html`)" />
+        <area shape="rect" coords="717,1177,914,1363" onclick="showOverlay(`palacio.html`)" />
+        <area shape="rect" coords="400,940,540,1005" onclick="showOverlay(`res_do_chao.html`)" />
+        <area shape="rect" coords="525,835,640,985" onclick="showOverlay(`res_do_chao.html`)" />
+        <area shape="rect" coords="51,978,169,1046" onclick="showOverlay(`res_do_chao.html`)" />
+        <area shape="rect" coords="400,810,525,940" onclick="showOverlay(`musica_leitura.html`)" />
+        <area shape="rect" coords="275,850,400,985" onclick="showOverlay(`renascenca_estar.html`)" />
+        <area shape="rect" coords="51,879,169,958" onclick="showOverlay(`renascenca_estar.html`)" />
+        <area shape="rect" coords="320,1005,565,1185" onclick="showOverlay(`caca_jantar.html`)" />
+        <area shape="rect" coords="51,1148,169,1266" onclick="showOverlay(`caca_jantar.html`)" />
+        <area shape="rect" coords="550,745,650,835" onclick="showOverlay(`fumo.html`)" />
+        <area shape="rect" coords="650,706,895,910" onclick="showOverlay(`reis_bilhar.html`)" />
+      </map>
+    </div>
+
+    <div class="overlay" onclick="hideOverlay()">
+      <div class="overlay-content">
+        <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
