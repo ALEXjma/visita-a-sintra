@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guia de Sintra</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/overlay.js"></script>
+  </head>
+  <body>
+    <div class="center-horizontal">
+      <h1>Clique nos lugares para mais informações</h1>
+      <img class="mapa" src="Imagens/Mapas/mapa_quinta_regaleira.png" usemap="#mapa" />
+      <map name="mapa">
+        <area shape="rect" coords="375,505,485,625" onclick="showOverlay(`lago_da_cascata.html`)" />
+        <area shape="rect" coords="585,1100,880,1320" href="palacio.html" />
+        <area shape="rect" coords="560,930,685,1065" onclick="showOverlay(`capela.html`)" />
+      </map>
+    </div>
+
+    <div class="overlay" onclick="hideOverlay()">
+      <div class="overlay-content">
+        <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

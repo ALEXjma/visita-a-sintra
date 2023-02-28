@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palácio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="scripts/overlay.js"></script>
+  </head>
+  <body>
+    <div class="center-horizontal">
+      <h1>Clique nos lugares para mais informações</h1>
+      <img class="mapa" src="Imagens/Mapas/mapa_palacio_quinta_regaleira.png" usemap="#mapa" />
+      <map name="mapa">
+        <area shape="rect" coords="235,745,860,1245" onclick="showOverlay(`res_do_chao.html`)" />
+      </map>
+    </div>
+
+    <div class="overlay" onclick="hideOverlay()">
+      <div class="overlay-content">
+        <iframe src="" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
